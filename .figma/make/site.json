@@ -1,0 +1,10 @@
+{
+  "description": "Discover and share home-cooked meals and restaurant experiences in a dedicated food community, featuring personalized city maps of favorite dining spots.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
