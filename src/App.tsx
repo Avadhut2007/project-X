@@ -4,6 +4,7 @@ import FeedScreen from "./screens/FeedScreen";
 import ExploreScreen from "./screens/ExploreScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import CreatePostScreen from "./screens/CreatePostScreen";
+import CityMapScreen from "./screens/CityMapScreen";
 
 type Tab = "feed" | "explore" | "map" | "profile";
 
@@ -52,7 +53,7 @@ function PlusIcon({ small = false }: { small?: boolean }) {
 const NAV_ITEMS = [
   { id: "feed" as Tab, label: "Home", Icon: HomeIcon },
   { id: "explore" as Tab, label: "Explore", Icon: CompassIcon },
-  { id: "map" as Tab, label: "My Map", Icon: MapPinIcon },
+  { id: "map" as Tab, label: "Map", Icon: MapPinIcon },
   { id: "profile" as Tab, label: "Profile", Icon: UserIcon },
 ];
 
@@ -279,7 +280,7 @@ export default function App() {
     <>
       {activeTab === "feed" && <FeedScreen />}
       {activeTab === "explore" && <ExploreScreen />}
-      {activeTab === "map" && <ProfileScreen initialTab="map" />}
+      {activeTab === "map" && <CityMapScreen />}
       {activeTab === "profile" && <ProfileScreen initialTab="posts" />}
     </>
   );
